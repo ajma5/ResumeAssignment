@@ -1,23 +1,74 @@
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  font-family: "Open Sans", sans-serif; 
   margin: 0;
-  padding: 0;
+  color: #98999a; 
+  background-color: #27466b; 
 }
 
 main {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 100px;
+  background-color: #fff; 
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+header p {  /* Target paragraphs within the header */
+  text-align: justify;
+  padding-left: 70px;
+  padding-right: 70px;
+  margin-bottom: 10px; /* Add space below the paragraph */
+  line-height: 1.5; /* Increase line height for better readability */
+  letter-spacing: 0.5px; /* Increase tracking (space between letters) slightly */
+}
+
+section p {  /* Target paragraphs within the section */
+  text-align: left;
+  font-style: italic;
+  padding-left: 70px;
+  padding-right: 30px;
+  margin-bottom: 10px; /* Add space below the paragraph */
+  line-height: 1.5; /* Increase line height for better readability */
+  letter-spacing: 0.5px; /* Increase tracking (space between letters) slightly */
 }
 
 h1, h2, h3 {
-  margin-top: 0;
+  margin-top: 0; /* Reset any default margin-top */
+  font-weight: bold;
+  color: #173254; /* Darker text for headings */
+  font-variant: small-caps; /* Convert headings to small caps */
+  letter-spacing: 0.5px; /* Increase tracking (space between letters) slightly */
+
+}
+
+h1 {
+  font-size: 2.9rem;
+  text-shadow: 7px 7px 10px rgba(100, 180, 220, 0.3); /* Cool blue text shadow */
+  padding-left: 7px;
+  letter-spacing: 4px; /* Increase tracking (space between letters) slightly */
+
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #666; /* Slightly lighter text for subheadings */
+  margin-top: 50px; /* Add space on top of h2 */
+  margin-bottom: 1px;
+  padding-left: 20px;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  font-style: italic;
+  padding-left: 35px; /* Add indent here (adjust value in pixels) */
 }
 
 footer {
   margin-top: 50px;
   text-align: center;
+  background-color: #ffffff; /* Very light gray background */
 }
 
 footer ul {
@@ -25,15 +76,21 @@ footer ul {
   padding: 0;
 }
 
-footer ul li {
-  display: inline;
-  margin-right: 10px;
+
+footer a {
+  color: #274080; /* Darker color for links */
+  text-decoration: none;
+  text-align: center;
+}
+
+footer a:hover {
+  color: #3399cc; /* Lighter blue on hover */
 }
 
 /* Style for images under h3 headings */
 section img {
-  max-width: 200px; /* Adjust the maximum width as needed */
+  max-width: 500px;
   height: auto;
   display: block;
-  margin: 10px auto; /* Adjust margin as needed */
+  margin: 10px auto;
 }
