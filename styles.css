@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+/* Style for images under h3 headings */
+section img {
+  max-width: 200px; /* Adjust the maximum width as needed */
+  height: auto;
+  display: block;
+  margin: 10px auto; /* Adjust margin as needed */
+}
