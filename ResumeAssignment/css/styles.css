@@ -1,0 +1,223 @@
+body {
+  font-family: system-ui, sans-serif; 
+  margin: 0;
+  color: #8f8f91; 
+  background-color: white; 
+  background-image: url('../images/background.jpg'); /* Added background image */
+  background-size: contain; /* Ensure the background image covers the entire screen */
+}
+
+
+
+
+
+
+.container {
+  max-width: 900px; /* Set max width of container */
+  margin: 0 auto; /* Center the container */
+}
+
+nav {
+  position: relative;
+  z-index: 1;
+  width: 100%; /* Set navbar width to 100% */
+  margin: 0 auto; /* Center the navbar */
+}
+
+nav ul {
+  display: flex; /* Use flexbox */
+  justify-content: space-between; /* Distribute items evenly */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: rgba(35, 73, 95, 0.8); /* Decreased opacity of navbar background */
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border-bottom: 2px solid transparent; /* Add a transparent bottom border to all nav links */
+}
+
+nav ul li:hover > a {
+  border-color: #ffffff; /* Change border color on hover */
+  font-weight: bold;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(255, 255, 255, 0.916);
+  border-radius: 8px; /* Rounded corners for the dropdown */
+  width: 175px; /* Set width of the dropdown box */
+}
+
+nav ul ul li {
+  display: block;
+}
+
+nav ul ul li a {
+  padding: 10px 20px;
+  color: #667;
+}
+
+
+
+
+
+
+
+
+/* Adjust padding-top of main to prevent content overlap with navbar */
+main {
+  padding: 50px 100px; /* Adjust as needed */
+}
+
+
+/* Adjust padding-top of main to prevent content overlap with navbar */
+main {
+  padding: 50px 100px; /* Adjust as needed */
+}
+
+.home {
+  background-color: rgba(255, 255, 255, 0.8); /* Added background color with opacity */
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.btn:hover {
+  background-color: rgba(76, 175, 80, 0.8); /* Darker shade with opacity on hover */
+}
+
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 100px;
+  border-radius: 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  display: grid; /* Added grid display */
+  grid-template-columns: 1fr; /* Single column layout */
+  gap: 20px; /* Gap between grid items */
+}
+
+section {
+  display: flex; /* Added flexbox display */
+  flex-direction: column; /* Stack flex items vertically */
+    line-height: 2; 
+}
+
+section img {
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+  max-width: 80%; /* Ensure images don't exceed their container width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+header p {
+  text-align: justify;
+  padding-left: 70px;
+  padding-right: 70px;
+  margin-bottom: 10px; 
+  line-height: 1.75; 
+  letter-spacing: 0.65px; 
+}
+
+section p {  
+  text-align: left;
+  padding-left: 70px;
+  padding-right: 30px;
+  margin-top: -20px;
+  margin-bottom: 5px; 
+  letter-spacing: 0.5px; 
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center; /* Center align the content */
+  background-color: rgba(214, 214, 214, 0.466); /* Very light gray background */
+  padding: 20px; /* Add padding for spacing */
+  border-radius: 7px;
+
+}
+
+footer h2 {
+  margin-bottom: 20px; /* Add margin for spacing */
+  text-align: center; /* Center align the <h2> element */
+}
+
+footer a {
+  color: #274080; /* Darker color for links */
+  text-decoration: none;
+}
+
+footer .btn {
+  display: inline-block;
+  padding: 10px 40px;
+  margin-bottom: 10px;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 0; 
+  font-weight: bold;
+  color: #173254; 
+  font-variant: small-caps; 
+  letter-spacing: 0.5px; 
+}
+
+h1 {
+  font-size: 2.9rem;
+  text-shadow: 7px 7px 10px rgba(100, 180, 220, 0.3); 
+  padding-left: 10px;
+  letter-spacing: 4px; 
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #667; 
+  margin-top: 50px; 
+  margin-bottom: 1px;
+  padding-left: 40px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 10px; 
+    padding-left: 58px;
+    font-style: italic;
+}
+
+h4 {
+  font-size: 1.5rem;
+  color: #667; 
+  margin-top: 10px; 
+  margin-bottom: 10px;
+} 
